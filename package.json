@@ -1,0 +1,30 @@
+{
+  "name": "cc01-wc-tool",
+  "version": "1.0.0",
+  "description": "A challenge to build your own version of the Unix command line tool wc! Original idea from \"Coding Challenges\".",
+  "main": "index.js",
+  "scripts": {
+    "prod": "tsc && node ./dist/index.js",
+    "dev": "tsx ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuscgodoy/cc01-wc-tool.git"
+  },
+  "keywords": [
+    "CodingChallenges",
+    "wc"
+  ],
+  "author": "Mateus Colombo Godoy",
+  "license": "MIT",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/mateuscgodoy/cc01-wc-tool/issues"
+  },
+  "homepage": "https://github.com/mateuscgodoy/cc01-wc-tool#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
