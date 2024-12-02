@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A challenge to build your own version of the Unix command line tool wc! Original idea from \"Coding Challenges\".",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prod": "tsc && node ./dist/index.js",
     "dev": "tsx ./src/index.ts"
