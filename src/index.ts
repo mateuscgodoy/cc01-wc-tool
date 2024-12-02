@@ -18,7 +18,7 @@ async function main() {
       countBytes(arg2);
       break;
     case '-l':
-      console.log('Counting lines!');
+      countLines(arg2);
       break;
     case '-w':
       console.log('Counting words!');
@@ -35,7 +35,7 @@ async function main() {
   }
 }
 
-async function countBytes(filePath: string) {
+function countBytes(filePath: string) {
   try {
     const readableStream = createReadStream(filePath);
     let byteCount = 0;
@@ -47,6 +47,23 @@ async function countBytes(filePath: string) {
       const leftOvers = readableStream.read();
       byteCount += +leftOvers;
       console.log(byteCount);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function countLines(filePath: string) {
+  try {
+    const readableStream = createReadStream(filePath);
+    let lineCount = 0;
+    readableStream.on('data', (chunk) => {
+      const chunkStr = chunk.toString();
+      lineCount += [...chunkStr.matchAll(/\n/g)].length;
+    });
+
+    readableStream.on('close', () => {
+      console.log(lineCount);
     });
   } catch (error) {
     console.log(error);

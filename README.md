@@ -10,7 +10,7 @@ The challenge was split into 7 major tasks:
 
 - [X] [Step 0️⃣](#step-zero): step the development environment.
 - [X] [Step 1️⃣](#step-one): implement the optional flag `-c` that outputs the number of bytes.
-- [ ] [Step 2️⃣](#step-two): implement the optional flag `-l` that outputs the number of lines in a file.
+- [X] [Step 2️⃣](#step-two): implement the optional flag `-l` that outputs the number of lines in a file.
 - [ ] [Step 3️⃣](#step-three): implement the optional flag `-w` that outputs the number of words in a file.
 - [ ] [Step 4️⃣](#step-four): implement the optional flag `-m` that outputs the number of characters in a file.
 - [ ] [Step 5️⃣](#step-five): implement the flagless version (describe on the requirements below).
